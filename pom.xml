@@ -1,40 +1,44 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+			xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>fr.dev</groupId>
-  <artifactId>xcrud</artifactId>
-  <version>3.0.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<repositories>
+		<repository>
+			<id>release</id>
+			<url>http://dev.hhome.fr:8081/artifactory/libs-release-local</url>
+			<snapshots> 
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
-  <name>xcrud</name>
-  <url>http://maven.apache.org</url>
+	<parent>
+		<groupId>fr.hhdev</groupId>
+		<artifactId>parent-pom</artifactId>
+		<version>1.0.2</version>
+	</parent>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+	<groupId>fr.dev</groupId>
+	<artifactId>xcrud</artifactId>
+	<version>3.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>xcrud</name>
 
-  <dependencies>
-    <dependency>
-      <groupId>fr.hhdev</groupId>
-      <artifactId>parent-pom</artifactId>
-      <version>1.0.1</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>commons-lang</groupId>
-      <artifactId>commons-lang</artifactId>
-      <version>2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>fr.hhdev</groupId>
-      <artifactId>cdilogger</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
-      <version>7.0</version>
-    </dependency>
-  </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>fr.hhdev</groupId>
+			<artifactId>cdilogger</artifactId>
+			<version>[1.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+		</dependency>
+	</dependencies>
 </project>
