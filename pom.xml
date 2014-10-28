@@ -15,10 +15,10 @@
 	<parent>
 		<groupId>fr.hhdev</groupId>
 		<artifactId>parent-pom</artifactId>
-		<version>1.0.2</version>
+		<version>1.0.3</version>
 	</parent>
 
-	<groupId>fr.dev</groupId>
+	<groupId>fr.hhdev</groupId>
 	<artifactId>xcrud</artifactId>
 	<version>3.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
