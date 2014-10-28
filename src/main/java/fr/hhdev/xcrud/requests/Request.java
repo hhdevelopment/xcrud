@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package fr.dev.xcrud.requests;
+package fr.hhdev.xcrud.requests;
 
 /**
  *

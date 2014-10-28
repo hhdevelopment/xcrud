@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package fr.dev.xcrud.annotations;
+package fr.hhdev.xcrud.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -2,11 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.dev.xcrud;
+package fr.hhdev.xcrud;
 
-import fr.dev.xcrud.exceptions.EntityIdNotFound;
-import fr.dev.xcrud.exceptions.FieldNotFound;
-import fr.dev.xcrud.exceptions.MethodNotFound;
+import fr.hhdev.xcrud.exceptions.EntityIdNotFound;
+import fr.hhdev.xcrud.exceptions.FieldNotFound;
+import fr.hhdev.xcrud.exceptions.MethodNotFound;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -27,8 +27,8 @@ public class EntityTools {
 	 *
 	 * @param entity
 	 * @return
-	 * @throws fr.dev.xcrud.exceptions.EntityIdNotFound
-	 * @throws fr.dev.xcrud.exceptions.MethodNotFound
+	 * @throws fr.hhdev.xcrud.exceptions.EntityIdNotFound
+	 * @throws fr.hhdev.xcrud.exceptions.MethodNotFound
 	 */
 	public static Method getIdentityGetter(Object entity) throws EntityIdNotFound, MethodNotFound {
 		Class tClass = entity.getClass();
@@ -51,7 +51,7 @@ public class EntityTools {
 	 * @param tClass
 	 * @param field
 	 * @return Method
-	 * @throws fr.dev.xcrud.exceptions.MethodNotFound
+	 * @throws fr.hhdev.xcrud.exceptions.MethodNotFound
 	 */
 	public static Method getGetterFromField(Class tClass, Field field) throws MethodNotFound {
 		String fieldName = field.getName();
@@ -76,7 +76,7 @@ public class EntityTools {
 	 * @param tClass
 	 * @param getter
 	 * @return
-	 * @throws fr.dev.xcrud.exceptions.FieldNotFound
+	 * @throws fr.hhdev.xcrud.exceptions.FieldNotFound
 	 */
 	public static Field getFieldFromGetter(Class tClass, Method getter) throws FieldNotFound {
 		if (getter.isAnnotationPresent(Lob.class)) {

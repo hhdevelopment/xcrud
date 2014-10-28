@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package fr.dev.xcrud.exceptions;
+package fr.hhdev.xcrud.exceptions;
 
 /**
  *

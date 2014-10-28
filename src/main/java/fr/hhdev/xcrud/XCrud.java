@@ -2,19 +2,19 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.dev.xcrud;
+package fr.hhdev.xcrud;
 
-import fr.dev.xcrud.annotations.OrderBy;
-import fr.dev.xcrud.exceptions.BooleanValueException;
-import fr.dev.xcrud.exceptions.DateValueException;
-import fr.dev.xcrud.exceptions.EntityIdNotFound;
-import fr.dev.xcrud.exceptions.FieldNotFound;
-import fr.dev.xcrud.exceptions.InvalidIdException;
-import fr.dev.xcrud.exceptions.MethodNotFound;
-import fr.dev.xcrud.exceptions.NoVariableException;
-import fr.dev.xcrud.exceptions.NullValueException;
-import fr.dev.xcrud.exceptions.NumberValueException;
-import fr.dev.xcrud.requests.Request;
+import fr.hhdev.xcrud.annotations.OrderBy;
+import fr.hhdev.xcrud.exceptions.BooleanValueException;
+import fr.hhdev.xcrud.exceptions.DateValueException;
+import fr.hhdev.xcrud.exceptions.EntityIdNotFound;
+import fr.hhdev.xcrud.exceptions.FieldNotFound;
+import fr.hhdev.xcrud.exceptions.InvalidIdException;
+import fr.hhdev.xcrud.exceptions.MethodNotFound;
+import fr.hhdev.xcrud.exceptions.NoVariableException;
+import fr.hhdev.xcrud.exceptions.NullValueException;
+import fr.hhdev.xcrud.exceptions.NumberValueException;
+import fr.hhdev.xcrud.requests.Request;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -64,7 +64,7 @@ public abstract class XCrud<T> {
 	 *
 	 * @param name
 	 * @return
-	 * @throws fr.dev.xcrud.exceptions.NoVariableException
+	 * @throws fr.hhdev.xcrud.exceptions.NoVariableException
 	 */
 	public String getMysqlVariable(String name) throws NoVariableException {
 		Query query = getEntityManager().createNativeQuery("show variables");

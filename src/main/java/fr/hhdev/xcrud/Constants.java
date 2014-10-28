@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package fr.dev.xcrud;
+package fr.hhdev.xcrud;
 
 /**
  *

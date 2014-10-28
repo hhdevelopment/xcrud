@@ -3,18 +3,18 @@
  * and open the template in the editor.
  */
 
-package fr.dev.xcrud.exceptions;
+package fr.hhdev.xcrud.exceptions;
 
 /**
  *
  * @author Francois
  */
-public class DateValueException extends Exception {
+public class BooleanValueException extends Exception {
 
     /**
      * Creates a new instance of <code>BooleanValueException</code> without detail message.
      */
-    public DateValueException() {
+    public BooleanValueException() {
     }
 
 
@@ -22,7 +22,7 @@ public class DateValueException extends Exception {
      * Constructs an instance of <code>BooleanValueException</code> with the specified detail message.
      * @param msg the detail message.
      */
-    public DateValueException(String msg) {
+    public BooleanValueException(String msg) {
         super(msg);
     }
 }

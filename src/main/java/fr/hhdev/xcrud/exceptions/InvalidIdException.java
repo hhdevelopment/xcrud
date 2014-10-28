@@ -3,19 +3,18 @@
  * and open the template in the editor.
  */
 
-package fr.dev.xcrud.exceptions;
+package fr.hhdev.xcrud.exceptions;
 
 /**
  *
  * @author Francois
  */
-public class NoVariableException extends Exception {
-	private static final long serialVersionUID = 1L;
+public class InvalidIdException extends Exception {
 
     /**
      * Creates a new instance of <code>InvalidIdException</code> without detail message.
      */
-    public NoVariableException() {
+    public InvalidIdException() {
     }
 
 
@@ -23,7 +22,7 @@ public class NoVariableException extends Exception {
      * Constructs an instance of <code>InvalidIdException</code> with the specified detail message.
      * @param msg the detail message.
      */
-    public NoVariableException(String msg) {
+    public InvalidIdException(String msg) {
         super(msg);
     }
 }
