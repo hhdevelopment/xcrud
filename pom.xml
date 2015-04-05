@@ -2,16 +2,6 @@
 			xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<repositories>
-		<repository>
-			<id>release</id>
-			<url>http://dev.hhome.fr:8081/artifactory/libs-release-local</url>
-			<snapshots> 
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-
 	<parent>
 		<groupId>fr.hhdev</groupId>
 		<artifactId>parent-pom</artifactId>
